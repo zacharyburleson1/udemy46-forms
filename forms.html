@@ -26,7 +26,7 @@
         </p>
         <p>
             <label for="number">Enter a Number:</label>
-            <input type="number" placeholder="enter a number" id="number" name="num">
+            <input type="number" placeholder="enter a number" id="number" name="num" min="1" max="1000" step="2">
         </p>
         <!-- this button doesn't submit the form b/c of the "type" attribute -->
         <button type="button">Regular button (won't submit)</button>
@@ -79,6 +79,18 @@
                 <option value="steak">Steak</option>
             </select>
         </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" name="cheese_level" value="8">
+        </p>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea name="requests" id="requests" cols="40" rows="10" placeholder="Type something here"></textarea>
+        </p>
+
         <button>Submit</button>
     </form>
 
